@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/mobile-angular-ui-base.min.css" />
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="font/stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="css/mobile-angular-ui-hover.min.css" />
+	<script src="js/angular-1.4.5.js"></script>
+	<!--<script src="phonegap.js"></script>-->
+	<script src="js/angular-material-icons.min.js"></script> 
+	<script src="json/clientes.json"></script>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+	<title>FSP</title>
+</head>
+<body ng-app ='MyApp' >
+	<header class="app-header">
+		 <div ng-include="'includes/navbarTop.html'"  class="navbar navbar-app navbar-absolute-top">
+		 </div>
+		<div ng-include="'includes/navbarBottom.html'" class="navbar navbar-app navbar-absolute-bottom">
+      </div>
+	</header>
+	<main>
+		<div ng-view>
+		</div>
+	</main>	
+	<script src="js/mobile-angular-ui.min.js"></script>
+  	<script src="js/angular-route.js"></script> 
+	<script src="js/mobile-angular-ui.gestures.min.js"></script>
+  	<script src="js/codigo.js"></script> 
+</body>
+</html>

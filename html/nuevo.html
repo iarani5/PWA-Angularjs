@@ -1,0 +1,38 @@
+<div ui-content-for="title">
+  <span>NUEVA EMPRESA</span>
+</div>
+
+<div class="scrollable">
+ <div class="scrollable-content section">
+ <div class="panel"> 
+		
+  <form role="form" class='form' ng-controller='formCtrl' ng-submit="submit(cliente)">
+    <fieldset>
+		<div class="form-group">
+		<label>Empresa:</label>
+		<input type="text" ng-model="cliente.empresa" name='empresa' class="form-control">
+		<label>Direccion:</label>
+		<input type="text" ng-model="cliente.direccion" name='direccion' class="form-control">
+		<label>Localidad:</label>
+		<input type="text" ng-model="cliente.localidad" name='localidad' class="form-control">
+		<label>Nombre y Apellido:</label>
+		<input type="text" ng-model="cliente.nombre" name='nombre' class="form-control" required>
+		<label>Teléfonos/Celulares:</label>
+		<input type="text" ng-model="cliente.tel1" name='tel1' class="form-control esp part">
+		<input type="text" ng-model="cliente.tel2" name='tel2' class="form-control esp">
+		<input type="text" ng-model="cliente.tel3" name='tel3' class="form-control esp">
+        <label class='esp1'>Email:</label>
+        <input type="email" ng-model="cliente.email" name='email' class="form-control">
+		<label>Comentarios:</label>
+		<textarea rows='4' ng-model="cliente.comentarios" name='comentarios' class="form-control"></textarea>
+		</div>
+		<div class="form-group botones ">
+		<button type="submit" class="form-control pull-right"><ng-md-icon icon="check_box" style="fill: black" size="40"></ng-md-icon></button>
+		<button type="reset" class="form-control pull-right"><ng-md-icon icon="highlight_remove" style="fill: black" size="40"></ng-md-icon></button>
+		</div>
+    </fieldset>
+  </form>
+  </div>
+ </div>
+</div>
+

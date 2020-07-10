@@ -1,0 +1,26 @@
+<div ui-content-for="title">
+  <span>INFORMACIÓN</span>
+</div>
+
+<div class="scrollable">
+<div class="scrollable-content"> 
+  <div class="section-success">
+	 <div class="list-group"  ng-repeat="cnt in mostrar">
+			<ul id='lista'>
+				<li><span class='tit'>Aplicacion :</span> {{cnt.aplicacion}}</li>
+				<li><span class='tit'>Objetivo :</span> {{cnt.Objetivo}}</li>
+				<li><span class='tit'>Alcance :</span> {{cnt.Alcance}}</li>
+				<li><span class='tit'>Empresa :</span> {{cnt.Empresa}}</li>
+				<li><span class='tit'>Necesidades :</span> {{cnt.Necesidades}}</li>
+			</ul>
+	</div>
+			<ul id="info">
+				<li>{{ message }}</li>
+				<li>{{ message2 }}</li>
+				<li>{{ message3 }}</li>
+				<li>Estado: {{rta}}</li>
+			</ul>
+ </div>
+</div>
+</div>
+

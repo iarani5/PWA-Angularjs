@@ -1,0 +1,13 @@
+<div ui-content-for="title">
+	<span>EMPRESAS</span>
+</div>
+<div class="scrollable">
+  <div class="scrollable-content" ui-scroll-bottom='bottomReached()'>
+    <div class="list-group" id='cl'>
+      <a ng-repeat="item in scrollItems" ng-click="cargar()" href="#empresa" class="list-group-item">
+        {{ item.empresa }}  
+          <ng-md-icon class="pull-right" icon="add_circle_outline" style="fill: black" size="24">
+	  </a>
+    </div>
+  </div>
+</div>
